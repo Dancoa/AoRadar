@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <RelativeLayout
+        android:id="@+id/vgp_enemy_detail_header"
+        android:background="@drawable/enemies_list_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:paddingTop="8px">
+
+        <Button android:id="@+id/btnEnermyList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_enemies_list_def"
+            android:layout_alignParentLeft="true" />
+
+        <Button android:id="@+id/btnEditEnermyDetial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_enemies_list_edit_def"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/vgp_enemy_detail"
+        android:layout_height="wrap_content"
+        android:background="@drawable/enemies_list_item_background"
+        android:paddingTop="10px"
+        android:paddingRight="10px"
+        android:paddingLeft="40px"
+        android:layout_below="@id/vgp_enemy_detail_header">
+
+        <TextView android:id="@+id/tvEnermyNameDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#ec3239"
+            android:paddingTop="3dp"
+            android:paddingLeft="30dp"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/btnDeleteEnermyDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_list_delete_def"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/enemy_detail_centre_background"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/vgp_enemy_detail" >
+        <TextView
+            android:id="@+id/tvEnermyNumberDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvEnermyLatlng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:layout_below="@id/tvEnermyNumberDetail"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView android:id="@+id/tvEnermyAltitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:layout_below="@id/tvEnermyLatlng"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView android:id="@+id/tvEnermyAccuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:layout_below="@id/tvEnermyAltitude"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView android:id="@+id/tvEnermyNearestAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:layout_below="@id/tvEnermyAccuracy"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView android:id="@+id/tvEnermyLastUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:layout_below="@id/tvEnermyNearestAddress"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView android:id="@+id/tvEnermyNextUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:layout_below="@id/tvEnermyLastUpdate"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vgp_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_footer"
+        android:layout_alignParentBottom="true">
+
+        <Button android:id="@+id/btnEnermyDetailToHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_radar_def"
+            android:layout_alignParentLeft="true" />
+
+        <Button android:id="@+id/btnEnermyDetailToFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_friends_def"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
